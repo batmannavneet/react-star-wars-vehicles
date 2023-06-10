@@ -99,7 +99,7 @@ const App: React.FC = () => {
   );
 };
 
-function extractPageCount(prevUrl: string, nextUrl: string, count: number) {
+function extractPageCount(prevUrl: string|null, nextUrl: string|null, count: number) {
   if(prevUrl == null && nextUrl == null) {
     return [0, count]; //no records found
   }
@@ -120,3 +120,4 @@ function extractPageCount(prevUrl: string, nextUrl: string, count: number) {
 }
 
 export default App;
+export const ExtractPageCount = extractPageCount;
