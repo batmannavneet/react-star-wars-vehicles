@@ -1,6 +1,3 @@
-import React from "react";
-import { render, screen } from "@testing-library/react";
-import App from "./App";
 import { ExtractPageCount } from "./App";
 
 test("Extract page count #1", () => {
