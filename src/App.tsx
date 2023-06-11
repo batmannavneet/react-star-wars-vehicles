@@ -101,7 +101,7 @@ const App: React.FC = () => {
 
 function extractPageCount(prevUrl: string|null, nextUrl: string|null, count: number) {
   if(prevUrl == null && nextUrl == null) {
-    return [0, count]; //no records found
+    return (count == 0) ? [0, 0] : [1, count]; //no records found or small subset found
   }
 
   if (prevUrl == null) {
