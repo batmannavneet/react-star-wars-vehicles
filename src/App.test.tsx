@@ -6,7 +6,7 @@ test("Extract page count #1", () => {
   expect(res).toStrictEqual(expected);
 });
 
-test("Extract page count #1", () => {
+test("Extract page count #2", () => {
   const expected = [1, 5];
   const res = ExtractPageCount(null, null, 5);
   expect(res).toStrictEqual(expected);
